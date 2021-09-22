@@ -1,54 +1,155 @@
-
 <!doctype html>
-  <html lang="en">
-    <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-      <link rel="stylesheet" href='./style.css'></link>
+<html lang="en">
 
-      <title>Xmas</title>
-    </head>
-    <body>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href='./style.css'>
+  </link>
+
+  <title>Xmas</title>
+</head>
+
+<body>
   <section class="header">
-  <div class="conatiner">
-    <ul class="nav justify-content-between">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Firmagavekort</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-     
-      <li class="nav-item d-flex">
-        <a class="nav-link nav-tel" href="#">+47 21 95 03 50</a>
-        <a class="nav-link nav-btn">Bestill julegaver</a>
-      </li>
-    </ul>
-   </div>
-    <div class="conatiner">
-    <div class="row text-center align-items-center">
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-      <h1 class="header_h1 mb-3">Et Julegavekort til tusenvis av muligheter</h1>
-      <h6 class="header_h6">Med et Julegavekort kan gavekort mottakeren fritt velge mellom mange gavekort og opplevelser.</h6>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <img src="./assets/xmas-woman.png" alt="" width="68%"/>
-      </div>
-    </div>
-    </div>
-    </section>
-    <canvas id="snow">
 
-    </canvas>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
-      <script src="./script.js">
-       
-      </script>
- 
-    
- </body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand hover-white color-white" href="#">Firmagavekort</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item d-flex">
+              <img src="assets/snow-logo-small.png" alt="logo" class="logo" />
+            </li>
+          </ul>
+          <li class="nav-item d-flex">
+            <a class="nav-link nav-tel hover-white" href="#">+47 21 95 03 50</a>
+            <a class="nav-link nav-btn">Bestill julegaver</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <div class="conatiner">
+      <div class="row text-center pt-5 header-info">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 p-4">
+          <h1 class="header_h1 mb-4">Et Julegavekort til tusenvis av muligheter</h1>
+          <h6 class="header_h6">Med et Julegavekort kan gavekort mottakeren fritt velge mellom mange gavekort og
+            opplevelser.</h6>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <img src="./assets/xmas-woman.png" alt="" width="68%" class="woman" />
+        </div>
+      </div>
+    </div>
+    <img class="header-after-img" src="./assets/card-header.jpg" />
+  </section>
+
+  <section class="cards">
+    <div class="row mb-3">
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+      <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mr-small"><img src="./assets/card.jpeg" alt="" /></div>
+    </div>
+  </section>
+  <section class="info">
+    <div class="container">
+      <div class="row flex-direction-column">
+        <h5 class="head_5 mt-5">LuksusGavekort - En julegave som alle kan bruke</h5>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <p class="plain-text mt-4">Luksus Gavekort er et åbent gavekort som alle kan bruge, da modtageren af
+            gavekortet her
+            frit kan vælge
+            imellem alle vores gavekort og oplevelser.</p>
+          <p class="plain-text ">
+            Vi har over 100 forskellige gavekort og oplevelser, så der er
+            helt
+            sikkert noget for en hver smag. Vi har både gavekort til personligpleje, mode, boligindretning, kæledyr,
+            sport, mad, oplevelser, gadgets, lækkerier, vin, blomster, bøger, børn, hårde hvidevarer, elektronik,
+            rejser,
+            wellness, film og teater.
+          </p>
+          <p class="header_color underline">Se det fulde sortiment her →</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info">
+    <div class="container">
+      <div class="row flex-direction-column">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <h5 class="head_5 mt-5">100+ forskjellige gavekort</h5>
+          <h5 class="head_5 red-light">til 25000+ gaver</h5>
+          <p class="plain-text mt-4">LuksusGavekortet kan sendes via mobiltelefon eller e-post, med levering døgnet
+            rundt på alle ukens 7 dager.</p>
+          <p class="plain-text ">
+            Det er mulig å sende en personlig hilsen sammen med det digitale gavekortet.
+          </p>
+          <p class="plain-text p-28">
+            Motakeren får gavekortet få sekunder etter dette er kjøpt, og kan med et samme benyttes til mer enn 100
+            gavekort og opplevelser.
+          </p>
+          <h6>Vårt bredt utvalg gjør,at det er noe til en hver smak.</h6>
+          <ul class="list-info list-unstyled">
+            <li class="plain-text"><i class="fa fa-check header_color" aria-hidden="true"></i>
+              Bestem selv beløpet</li>
+            <li class="plain-text"><i class="fa fa-check header_color" aria-hidden="true"></i>
+              Kan brukes flere ganger </li>
+            <li class="plain-text"><i class="fa fa-check header_color" aria-hidden="true"></i>
+              Kan brukes til alle gavekort og opplevelser på Huuray.no</li>
+            <li class="plain-text"><i class="fa fa-check header_color" aria-hidden="true"></i>
+              Supplerende betaling</li>
+          </ul>
+          <p class="plain-text">Er du et firma og vil opprette en bedriftskonto?
+            <small class="underline plain-text m-53">Bli kontaktet her →</small>
+          </p>
+
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <img src="./assets/snowman.jpg" alt="" width="100%" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <canvas id="snow"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+  <script src="./script.js">
+
+  </script>
+
+
+</body>
+
 </html>
