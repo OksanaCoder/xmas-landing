@@ -121,7 +121,12 @@ canvas#snow {
   content: url('./assets/icon-tlf.svg');
   margin-right: 10px;
 }
-
+/* .phone::before {
+  content: url('./assets/tel-bg.png');
+  margin-right: 10px;
+  position: absolute;
+  width: 45x;
+} */
 .nav-btn {
     width: 166px;
     height: 45px;
@@ -184,7 +189,8 @@ canvas#snow {
   text-align: center;
   position: relative;
 }
-.products-box::after {
+.products-box::after,
+.source::after {
   content: "\f0d7";
   /* content: url('./assets/arrow-small.png'); */
   background: #fff;
@@ -369,7 +375,27 @@ canvas#snow {
 .source .container .row {
   padding: 50px;
 }
-
+.contact {
+  text-align: center;
+  padding-top: 100px;
+}
+.phone {
+  text-align: left;
+  margin-left: 20px;
+}
+.phone p {
+  font: normal normal bold 20px/22px Lato;
+  letter-spacing: 0px;
+  color: #77203B;
+  opacity: 1;
+  margin-bottom: 0 !important;
+}
+.phone small {
+  font: normal normal normal 15px/22px Lato;
+  letter-spacing: 0px;
+  color: #9B9B9B;
+  opacity: 1;
+}
 @media (max-width: 575.98px) {
   .woman {
     width: 50%;
