@@ -1,8 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-@import "font-awesome";
+@import "font-awesome/css/font-awesome.min.css";
 body {
-  font-family: Lato;
+  font-family: 'Quicksand' !important;
   letter-spacing: 0px;
   opacity: 1;
 }
@@ -12,16 +12,19 @@ body {
 .row { 
   --bs-gutter-x: 0;
 }
+.navbar {
+  padding-top: 50px !important;
+}
 .color-white {
   color: #fff !important;
 }
 .plain-text {
-  font: normal normal normal 16px/24px Lato;
+  font: normal normal normal 16px/24px 'Quicksand' ;
   letter-spacing: 0px;
   opacity: 1;
 }
 .plain-text-14 {
-  font: normal normal normal 14px/24px Lato;
+  font: normal normal normal 14px/24px 'Quicksand' ;
   letter-spacing: 0px;
   opacity: 1;
 }
@@ -42,7 +45,7 @@ body {
   color: #77203B;
 }
 .head_5 {
-  font: normal normal bold 30px/34px Gazpacho;
+  font: normal normal bold 30px/34px 'Quicksand' ;
   letter-spacing: 0px;
   color: #77203B;
   opacity: 1;
@@ -60,11 +63,14 @@ canvas#snow {
   position: relative;
   /* z-index: 998; */
   margin: 0;
-  padding: 0;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  overflow: hidden;
+
 }
 .header-info {
   padding-left: 100px;
@@ -75,8 +81,15 @@ canvas#snow {
   bottom: -120px;
   height: 225px;
   left: 200px;
-  /* transform: rotate(353deg) skew(2deg) translate(-1px,0px); */
-} 
+  z-index: 999;
+  -moz-transform: rotate(353deg) translate(-2px, 0px) skew(6deg, -2deg);
+  -webkit-transform: rotate(353deg) translate(-2px, 0px) skew(6deg, -2deg);
+  -o-transform: rotate(353deg) translate(-2px, 0px) skew(6deg, -2deg);
+  -ms-transform: rotate(353deg) translate(-2px, 0px) skew(6deg, -2deg);
+  transform: rotate(353deg) translate(-2px, 0px) skew(6deg, -2deg);
+  -webkit-box-shadow: -20px 17px 15px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -20px 17px 15px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: -20px 17px 15px 0px rgba(34, 60, 80, 0.2);} 
 
   img {
     margin: 0;
@@ -90,6 +103,7 @@ canvas#snow {
     margin: 0;
   
 }
+
 .navbar {
   color: #fff;
   width: 100%;
@@ -150,7 +164,7 @@ canvas#snow {
 }
 .header_h1 {
     text-align: center;
-    font: normal normal bold 75px/75px Gazpacho;
+    font: normal normal bold 75px/75px 'Quicksand' ;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -158,7 +172,7 @@ canvas#snow {
 .header_h6 {
     height: 65px;
     text-align: center;
-    font: normal normal normal 20px/25px Mandali;
+    font: normal normal normal 20px/25px 'Quicksand' ;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -192,22 +206,29 @@ canvas#snow {
   text-align: center;
   position: relative;
 }
-.products-box::after,
-.source::after {
-  content: "\f0d7";
-  /* content: url('./assets/arrow-small.png'); */
+
+.arrow-wrapper {
   background: #fff;
   padding: 30px 30px;
   border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: -20px;
+  font-size: 20px;
+  color: #77203B;
 }
-.show-container::after {
-  content: "\f0d7";
-  /* content: url('./assets/arrow-small.png'); */
-  background: #fff;
-  padding: 30px 30px;
-  border-radius: 50%; 
+.arrow-long {
+  font-size: 70px;
+  margin-top: 100px;
+}
+.arrow-pc {
+  margin-bottom: -60px;
+}
 
-}
 
 
 .m-95 {
@@ -237,7 +258,7 @@ canvas#snow {
 }
 .sweet-5 {
   height: 240px;
-  margin-bottom: 65px;
+  /* margin-bottom: 65px; */
 }
 .w-373 {
   width: 373px;
@@ -268,7 +289,7 @@ canvas#snow {
 .circle-text {
   width: 400px;
   text-align: center;
-  font: italic normal 300 22px/35px Lato;
+  font: italic normal 300 22px/35px 'Quicksand' ;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
@@ -283,6 +304,9 @@ canvas#snow {
 .partners {
   margin-bottom: 160px;
 }
+.woman {
+  width: 68%;
+}
 .m-20 {
   margin-bottom: 20px;
 }
@@ -290,7 +314,7 @@ canvas#snow {
   margin-top: 40px !important;
 }
 .head_6 { 
-  font: normal normal bold 20px/24px Lato;
+  font: normal normal bold 20px/24px 'Quicksand' ;
   letter-spacing: 0px;
   color: #77203B;
 }
@@ -302,7 +326,7 @@ canvas#snow {
 }
 .btn-big {
   text-align: center;
-  font: normal normal bold 18px/35px Lato;
+  font: normal normal bold 18px/35px 'Quicksand' ;
   letter-spacing: 0px;
   color: #FFFFFF;
   /* width: 439px; */
@@ -314,21 +338,16 @@ canvas#snow {
   border: none;
   margin-top: 23px;
 }
-.partners::after {
-  content: '\f175';
-  /* content: url('./assets/arrow-down.png'); */
-  position: absolute;
-  left: 50%;
-}
-.circle-text > p:first-child:after {
-  content: '\f005';
-}
+
 .circle-text-auth {
   text-align: center;
-  font: normal normal bold 14px/31px Lato;
+  font: normal normal bold 14px/31px 'Quicksand' ;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
+}
+.fa-star {
+  color: #77203B;
 }
 .circle-text::after {
   content: '';
@@ -400,14 +419,14 @@ canvas#snow {
   margin-left: 20px;
 }
 .phone p {
-  font: normal normal bold 20px/22px Lato;
+  font: normal normal bold 20px/22px 'Quicksand';
   letter-spacing: 0px;
   color: #77203B;
   opacity: 1;
   margin-bottom: 0 !important;
 }
 .phone small {
-  font: normal normal normal 15px/22px Lato;
+  font: normal normal normal 15px/22px 'Quicksand' ;
   letter-spacing: 0px;
   color: #9B9B9B;
   opacity: 1;
@@ -422,7 +441,7 @@ canvas#snow {
   width: 33px;
   height: 31px;
   text-align: center;
-  font: normal normal bold 22px/26px Lato;
+  font: normal normal bold 22px/26px 'Quicksand' ;
   letter-spacing: 0px;
   color: #FFFFFF;
   background: #77203B;
@@ -441,6 +460,7 @@ canvas#snow {
 .show-block {
   background: #F7E9EC 0% 0% no-repeat padding-box;
   margin-top: 150px;
+  padding-bottom: 40px;
 }
 .show-container img {
   margin-top: -83px !important;
@@ -521,7 +541,7 @@ footer {
   margin-bottom: 86px;
 }
 footer h5 {
-  font: normal normal bold 30px/34px Gazpacho;
+  font: normal normal bold 30px/34px 'Quicksand' ;
   margin-bottom: 42px;
   letter-spacing: 0px;
   color: #fff;
@@ -543,7 +563,7 @@ footer .row {
     width: 50%;
   } */
   .header_h1 {
-    font: normal normal bold 40px/40px Gazpacho;
+    font: normal normal bold 40px/40px 'Quicksand' ;
  }
 
  .cards img {
@@ -582,7 +602,7 @@ footer .row {
   line-height: inherit;
 }
 .circle-text {
-  font: italic normal 300 17px/17px Lato;
+  font: italic normal 300 17px/17px 'Quicksand' ;
   padding: 40px 70px;
 }
 .source-row > * {
@@ -618,6 +638,12 @@ footer .row {
 }
 .center-text {
   text-align: center;
+}
+.partners img {
+  width: 100px;
+}
+.sm-column {
+  flex-direction: column;
 }
  }
 
@@ -687,7 +713,7 @@ footer .row {
     bottom: -58px
   }
   .header_h6 {
-    font: normal normal normal 35px/40px Mandali;  }
+    font: normal normal normal 35px/40px 'Quicksand' ;  }
   
   
 }
@@ -699,14 +725,68 @@ footer .row {
    align-items: center;
   }
   .header_h6 {
-    font: normal normal normal 54px/64px Mandali;
+    font: normal normal normal 54px/64px 'Quicksand' ;
   }
   .header_h1 {
-    font: normal normal bold 103px/116px Gazpacho;
+    font: normal normal bold 103px/116px 'Quicksand' ;
   }
   .header-after-img {
     bottom: -114px;
     height: 344px;
     left: 450px;
+  }
+}
+
+
+.auto-slider {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  animation: bannermove 20s linear infinite;
+}
+.auto-slider-2 {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  animation: bannermove_2 20s linear infinite;
+}
+.auto-slider.paused {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.auto-slider div {
+  display: flex;
+  /* background: red; */
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+@keyframes bannermove_2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .auto-slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

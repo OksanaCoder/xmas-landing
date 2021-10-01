@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "online-data",
+			"path": "."
+		},
+		{
+			"name": "font-awesome",
+			"path": "../../Downloads/font-awesome"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "online-data"
+	}
+}
