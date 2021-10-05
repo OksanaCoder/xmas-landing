@@ -742,13 +742,13 @@ footer .row {
   display: flex;
   width: 100%;
   overflow: hidden;
-  animation: bannermove 20s linear infinite;
+  animation: bannermove 30s linear infinite;
 }
 .auto-slider-2 {
   overflow: hidden;
   display: flex;
   width: 100%;
-  animation: bannermove_2 20s linear infinite;
+  animation: bannermove_2 30s linear infinite;
 }
 .auto-slider.paused {
   -webkit-animation-play-state: paused;
@@ -789,4 +789,72 @@ footer .row {
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
+.marquee,
+.marquee-reverse {
+  background-color: aliceblue;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  background-color: antiquewhite;
+  display: inline-block;
+  width: max-content;
+  will-change: transform;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-reverse span {
+  background-color: antiquewhite;
+  display: inline-block;
+  width: max-content;
+  will-change: transform;
+  animation: marqueereverse 10s linear infinite;
+}
+
+.marquee span:hover,
+.marquee-reverse span:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-25%, 0);
+  }
+}
+
+@keyframes marqueereverse {
+  0% {
+    transform: translate(-25%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee span,
+  .marquee-reverse span {
+    animation-iteration-count: 1;
+    animation-duration: 0.01;
+    width: auto;
+    padding-left: 0;
+  }
+}
+
+.w-150 {
+  width: 150px;
+}
+@media (max-width: 500px) {
+  .marquee,
+.marquee-reverse  {
+  display: flex;
+  height: 100%;
+}
 }
